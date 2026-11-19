@@ -1,0 +1,1241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>踩踏解压_官方视频社区|沉浸式解压影像品牌</title>
+<meta name="description" content="踩踏解压官方网站，专注沉浸式踩踏解压视频与声音内容的原创品牌，汇聚专业创作者，打造高品质解压内容生态与温暖社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23222a33'/%3E%3Ccircle cx='24' cy='26' r='7' fill='%237bd6b0'/%3E%3Ccircle cx='42' cy='38' r='7' fill='%23f0b95f'/%3E%3Cpath d='M18 48h28' stroke='%23e8eef2' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tzx-ink:#1b2229;
+  --tzx-ink-2:#2b3540;
+  --tzx-paper:#f4f6f5;
+  --tzx-card:#ffffff;
+  --tzx-line:#dfe5e4;
+  --tzx-mint:#2f9e7a;
+  --tzx-mint-soft:#d9f0e6;
+  --tzx-amber:#e0a03c;
+  --tzx-amber-soft:#fbeed6;
+  --tzx-gray:#6c7a80;
+  --tzx-radius:16px;
+  --tzx-shadow:0 10px 30px rgba(27,34,41,.08);
+  --tzx-header-h:118px;
+  --tzx-font:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--tzx-header-h)}
+body{font-family:var(--tzx-font);color:var(--tzx-ink);background:var(--tzx-paper);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.tzx-wrapper{width:min(1180px,92vw);margin:0 auto}
+
+/* ---------- 吸顶头部 ---------- */
+.tzx-sticky-shell{position:sticky;top:0;z-index:90}
+.tzx-announce{background:var(--tzx-ink);color:#eaf3ef;font-size:13.5px}
+.tzx-announce .tzx-wrapper{display:flex;align-items:center;gap:14px;min-height:38px;padding:6px 0;overflow:hidden}
+.tzx-announce-badge{flex:none;background:var(--tzx-mint);color:#08120e;font-weight:700;border-radius:999px;padding:2px 10px;font-size:12px;letter-spacing:.5px}
+.tzx-announce-track{display:flex;gap:34px;white-space:nowrap;animation:tzx-marquee 26s linear infinite}
+.tzx-announce-track span{opacity:.9}
+.tzx-announce-track b{color:var(--tzx-amber)}
+@keyframes tzx-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tzx-header{background:rgba(244,246,245,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--tzx-line)}
+.tzx-header .tzx-wrapper{display:flex;align-items:center;gap:24px;min-height:80px}
+.tzx-brand{display:flex;align-items:center;gap:11px;flex:none}
+.tzx-brand-mark{width:42px;height:42px;border-radius:12px;background:var(--tzx-ink);display:grid;place-items:center;gap:2px}
+.tzx-brand-mark i{display:block;width:22px;height:4px;border-radius:2px;background:var(--tzx-mint)}
+.tzx-brand-mark i:nth-child(2){width:14px;background:var(--tzx-amber)}
+.tzx-brand-text b{display:block;font-size:19px;letter-spacing:1px;line-height:1.25}
+.tzx-brand-text small{display:block;font-size:11px;color:var(--tzx-gray);letter-spacing:2px}
+.tzx-nav{display:flex;gap:4px;margin-left:auto}
+.tzx-nav a{padding:9px 13px;border-radius:10px;font-size:14.5px;color:var(--tzx-ink-2);transition:.2s}
+.tzx-nav a:hover,.tzx-nav a.is-active{background:var(--tzx-mint-soft);color:#1d6f55;font-weight:600}
+.tzx-search{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--tzx-line);border-radius:999px;padding:5px 6px 5px 14px;flex:none}
+.tzx-search input{border:none;outline:none;font-size:14px;width:150px;background:transparent;color:var(--tzx-ink)}
+.tzx-search button{background:var(--tzx-ink);color:#fff;border-radius:999px;padding:6px 14px;font-size:13px}
+.tzx-burger{display:none;flex-direction:column;gap:5px;padding:8px;margin-left:auto}
+.tzx-burger span{width:22px;height:2px;background:var(--tzx-ink);border-radius:2px;transition:.25s}
+.tzx-burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.tzx-burger.is-open span:nth-child(2){opacity:0}
+.tzx-burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:960px){
+  .tzx-nav{position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;padding:10px 4vw 18px;border-bottom:1px solid var(--tzx-line);display:none;box-shadow:var(--tzx-shadow)}
+  .tzx-nav.is-open{display:flex}
+  .tzx-header .tzx-wrapper{flex-wrap:wrap;position:relative;padding:10px 0}
+  .tzx-search{order:3;width:100%;margin-top:6px}
+  .tzx-search input{width:100%}
+  .tzx-burger{display:flex}
+}
+
+/* ---------- 通用 ---------- */
+.tzx-section{padding:74px 0}
+.tzx-section-head{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:34px}
+.tzx-kicker{display:inline-block;font-size:12.5px;letter-spacing:3px;color:var(--tzx-mint);font-weight:700;text-transform:uppercase;margin-bottom:8px}
+.tzx-h2{font-size:clamp(24px,3vw,34px);line-height:1.3;letter-spacing:.5px}
+.tzx-h2 em{font-style:normal;color:var(--tzx-mint)}
+.tzx-sub{color:var(--tzx-gray);font-size:15px;max-width:620px}
+.tzx-head-right{margin-left:auto;font-size:14px;color:var(--tzx-gray)}
+.tzx-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;font-size:14.5px;font-weight:600;transition:.22s}
+.tzx-btn-primary{background:var(--tzx-mint);color:#07130e}
+.tzx-btn-primary:hover{background:#248467;color:#fff;transform:translateY(-2px)}
+.tzx-btn-ghost{border:1.5px solid var(--tzx-ink);color:var(--tzx-ink)}
+.tzx-btn-ghost:hover{background:var(--tzx-ink);color:#fff}
+.tzx-tag{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;background:var(--tzx-mint-soft);color:#1d6f55;font-weight:600}
+.tzx-tag.is-amber{background:var(--tzx-amber-soft);color:#9c6a18}
+
+/* ---------- 首屏 ---------- */
+.tzx-hero{padding:60px 0 70px;background:
+  radial-gradient(900px 420px at 88% -10%,rgba(47,158,122,.16),transparent 62%),
+  radial-gradient(700px 380px at 4% 108%,rgba(224,160,60,.16),transparent 60%),
+  var(--tzx-paper)}
+.tzx-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.tzx-hero-badge{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--tzx-line);border-radius:999px;padding:6px 15px;font-size:13px;color:var(--tzx-ink-2);box-shadow:var(--tzx-shadow);margin-bottom:20px}
+.tzx-hero-badge i{width:8px;height:8px;border-radius:50%;background:var(--tzx-mint);box-shadow:0 0 0 4px rgba(47,158,122,.18)}
+.tzx-h1{font-size:clamp(42px,6.4vw,76px);line-height:1.06;letter-spacing:2px;margin-bottom:18px}
+.tzx-h1 span{color:var(--tzx-mint)}
+.tzx-hero-lead{font-size:17.5px;color:var(--tzx-ink-2);max-width:540px;margin-bottom:22px}
+.tzx-hero-lead b{color:#1d6f55}
+.tzx-hero-intro{font-size:15px;color:var(--tzx-gray);max-width:560px;margin-bottom:28px}
+.tzx-hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+.tzx-hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:540px}
+.tzx-stat{background:#fff;border:1px solid var(--tzx-line);border-radius:var(--tzx-radius);padding:16px 18px;box-shadow:var(--tzx-shadow)}
+.tzx-stat b{display:block;font-size:26px;color:var(--tzx-mint);line-height:1.15;font-variant-numeric:tabular-nums}
+.tzx-stat span{font-size:12.5px;color:var(--tzx-gray);letter-spacing:.5px}
+.tzx-hero-visual{position:relative}
+.tzx-hero-cover{border-radius:26px;overflow:hidden;box-shadow:0 24px 60px rgba(27,34,41,.18);position:relative;aspect-ratio:4/3}
+.tzx-hero-cover img{width:100%;height:100%;object-fit:cover}
+.tzx-hero-cover .tzx-play{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+.tzx-hero-cover .tzx-play i{width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.22)}
+.tzx-hero-cover .tzx-play i::after{content:"";border-left:20px solid var(--tzx-ink);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+.tzx-hero-cover .tzx-cover-tag{position:absolute;left:16px;top:16px;background:rgba(27,34,41,.82);color:#fff;font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:1px}
+.tzx-hero-float{position:absolute;right:-14px;bottom:-20px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--tzx-shadow);display:flex;align-items:center;gap:12px;border:1px solid var(--tzx-line)}
+.tzx-hero-float .tzx-float-ring{width:38px;height:38px;border-radius:50%;background:conic-gradient(var(--tzx-mint) 0 78%,#e3e9e7 78% 100%);display:grid;place-items:center}
+.tzx-hero-float .tzx-float-ring b{width:28px;height:28px;border-radius:50%;background:#fff;font-size:10.5px;display:grid;place-items:center;color:var(--tzx-mint)}
+.tzx-hero-float small{display:block;font-size:12px;color:var(--tzx-gray)}
+.tzx-hero-float strong{font-size:14px}
+@media(max-width:900px){
+  .tzx-hero-grid{grid-template-columns:1fr;gap:36px}
+  .tzx-hero-float{right:8px}
+}
+
+/* ---------- 深度解析 ---------- */
+.tzx-about{background:#fff;border-top:1px solid var(--tzx-line);border-bottom:1px solid var(--tzx-line)}
+.tzx-about-grid{display:grid;grid-template-columns:1fr 320px;gap:46px}
+.tzx-about-body p{margin-bottom:18px;color:#3b474f;font-size:15.5px}
+.tzx-about-body h3{font-size:19px;margin:26px 0 10px;letter-spacing:.5px}
+.tzx-about-body h3::before{content:"";display:inline-block;width:9px;height:9px;border-radius:3px;background:var(--tzx-amber);margin-right:10px;vertical-align:2px}
+.tzx-about-body strong{color:#1d6f55;background:linear-gradient(transparent 62%,var(--tzx-mint-soft) 62%)}
+.tzx-about-side{align-self:start;position:sticky;top:calc(var(--tzx-header-h) + 20px);display:grid;gap:16px}
+.tzx-side-card{background:var(--tzx-paper);border:1px solid var(--tzx-line);border-radius:var(--tzx-radius);padding:20px}
+.tzx-side-card h4{font-size:15px;margin-bottom:12px}
+.tzx-side-card ul li{font-size:13.5px;color:var(--tzx-gray);padding:7px 0;border-bottom:1px dashed var(--tzx-line);display:flex;justify-content:space-between;gap:10px}
+.tzx-side-card ul li:last-child{border-bottom:none}
+.tzx-side-card ul li b{color:var(--tzx-ink)}
+.tzx-quote{background:var(--tzx-ink);color:#e7efec;border-radius:var(--tzx-radius);padding:22px}
+.tzx-quote p{font-size:14px;line-height:1.85}
+.tzx-quote span{display:block;margin-top:12px;font-size:12px;color:var(--tzx-mint);letter-spacing:1px}
+@media(max-width:900px){.tzx-about-grid{grid-template-columns:1fr}.tzx-about-side{position:static}}
+
+/* ---------- 焦点内容 ---------- */
+.tzx-focus-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:20px}
+.tzx-video-card{background:#fff;border:1px solid var(--tzx-line);border-radius:var(--tzx-radius);overflow:hidden;box-shadow:var(--tzx-shadow);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.tzx-video-card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(27,34,41,.14)}
+.tzx-cover{position:relative;aspect-ratio:16/9;overflow:hidden}
+.tzx-cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tzx-video-card:hover .tzx-cover img{transform:scale(1.06)}
+.tzx-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(15,22,27,.55))}
+.tzx-cover-tag{position:absolute;z-index:2;left:12px;top:12px;background:rgba(27,34,41,.82);color:#fff;font-size:11.5px;padding:4px 10px;border-radius:999px;letter-spacing:.5px}
+.tzx-cover-time{position:absolute;z-index:2;right:12px;bottom:12px;background:rgba(9,15,18,.72);color:#fff;font-size:11.5px;padding:3px 9px;border-radius:6px;font-variant-numeric:tabular-nums}
+.tzx-cover-play{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;opacity:0;transition:.25s}
+.tzx-video-card:hover .tzx-cover-play{opacity:1}
+.tzx-cover-play::after{content:"";border-left:14px solid var(--tzx-ink);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:3px}
+.tzx-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+.tzx-card-body h3{font-size:16.5px;line-height:1.45;letter-spacing:.3px}
+.tzx-card-body p{font-size:13.5px;color:var(--tzx-gray);line-height:1.7}
+.tzx-card-meta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--tzx-gray);margin-top:auto;flex-wrap:wrap}
+.tzx-avatar{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:11.5px;font-weight:700;color:#fff;flex:none}
+.tzx-card-actions{display:flex;gap:8px;align-items:center;padding-top:10px;border-top:1px dashed var(--tzx-line)}
+.tzx-mini-btn{font-size:12.5px;color:var(--tzx-gray);display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border-radius:8px;transition:.2s}
+.tzx-mini-btn:hover{background:var(--tzx-mint-soft);color:#1d6f55}
+.tzx-mini-btn.is-liked{color:#c2455a;font-weight:600}
+.tzx-mini-btn.is-saved{color:var(--tzx-amber);font-weight:600}
+.tzx-mini-btn svg{width:14px;height:14px}
+.tzx-focus-main .tzx-card-body h3{font-size:20px}
+.tzx-focus-main .tzx-cover{aspect-ratio:16/9}
+@media(max-width:980px){.tzx-focus-grid{grid-template-columns:1fr 1fr}.tzx-focus-main{grid-column:1/-1}}
+@media(max-width:620px){.tzx-focus-grid{grid-template-columns:1fr}}
+
+/* ---------- 热门视频流 ---------- */
+.tzx-stream{background:#fff;border-top:1px solid var(--tzx-line);border-bottom:1px solid var(--tzx-line)}
+.tzx-filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tzx-filter{padding:7px 16px;border-radius:999px;font-size:13.5px;background:var(--tzx-paper);border:1px solid var(--tzx-line);color:var(--tzx-ink-2);transition:.2s}
+.tzx-filter:hover{border-color:var(--tzx-mint);color:#1d6f55}
+.tzx-filter.is-active{background:var(--tzx-ink);color:#fff;border-color:var(--tzx-ink)}
+.tzx-stream-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tzx-stream-grid .tzx-video-card.is-hidden{display:none}
+@media(max-width:980px){.tzx-stream-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.tzx-stream-grid{grid-template-columns:1fr}}
+
+/* ---------- 创作者 ---------- */
+.tzx-creators{background:linear-gradient(180deg,var(--tzx-paper),#eef2f0)}
+.tzx-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tzx-creator-card{background:#fff;border:1px solid var(--tzx-line);border-radius:var(--tzx-radius);padding:22px;text-align:center;transition:.25s;box-shadow:var(--tzx-shadow)}
+.tzx-creator-card:hover{transform:translateY(-6px);border-color:var(--tzx-mint)}
+.tzx-creator-ava{width:66px;height:66px;border-radius:22px;margin:0 auto 12px;display:grid;place-items:center;font-size:24px;font-weight:800;color:#fff}
+.tzx-creator-card h3{font-size:16.5px;margin-bottom:4px}
+.tzx-creator-card .tzx-field{font-size:12.5px;color:var(--tzx-mint);font-weight:600;margin-bottom:10px}
+.tzx-creator-card p{font-size:13px;color:var(--tzx-gray);line-height:1.7;min-height:44px}
+.tzx-creator-nums{display:flex;justify-content:center;gap:16px;margin-top:14px;font-size:12.5px;color:var(--tzx-gray)}
+.tzx-creator-nums b{display:block;color:var(--tzx-ink);font-size:15px}
+.tzx-creator-link{margin-top:14px;display:inline-block;font-size:12.5px;color:var(--tzx-mint);font-weight:600}
+@media(max-width:980px){.tzx-creator-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.tzx-creator-grid{grid-template-columns:1fr}}
+
+/* ---------- 专题 ---------- */
+.tzx-topics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tzx-topic{position:relative;border-radius:var(--tzx-radius);overflow:hidden;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;color:#fff;box-shadow:var(--tzx-shadow)}
+.tzx-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.tzx-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,22,.05),rgba(12,18,22,.82));z-index:1}
+.tzx-topic>*{position:relative;z-index:2}
+.tzx-topic .tzx-topic-state{align-self:flex-start;font-size:11.5px;background:rgba(255,255,255,.2);backdrop-filter:blur(4px);padding:3px 11px;border-radius:999px;margin-bottom:10px;letter-spacing:.5px}
+.tzx-topic h3{font-size:19px;margin-bottom:6px}
+.tzx-topic p{font-size:13px;opacity:.86;line-height:1.65}
+@media(max-width:980px){.tzx-topics-grid{grid-template-columns:1fr 1fr}.tzx-topic:last-child{grid-column:1/-1}}
+@media(max-width:620px){.tzx-topics-grid{grid-template-columns:1fr}.tzx-topic:last-child{grid-column:auto}}
+
+/* ---------- 作品墙 ---------- */
+.tzx-wall{background:#fff;border-top:1px solid var(--tzx-line);border-bottom:1px solid var(--tzx-line)}
+.tzx-wall-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:118px;gap:14px}
+.tzx-wall-item{position:relative;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(27,34,41,.08)}
+.tzx-wall-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tzx-wall-item:hover img{transform:scale(1.08)}
+.tzx-wall-item span{position:absolute;left:10px;bottom:9px;right:10px;font-size:12px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.6);z-index:2}
+.tzx-wall-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(8,14,17,.6))}
+.tzx-wall-item.w-lg{grid-column:span 2;grid-row:span 2}
+.tzx-wall-item.w-md{grid-column:span 2}
+.tzx-wall-item.w-sm{grid-column:span 1}
+@media(max-width:900px){.tzx-wall-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:100px}}
+@media(max-width:560px){.tzx-wall-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px}.tzx-wall-item.w-md{grid-column:span 1}}
+
+/* ---------- 评论 ---------- */
+.tzx-voices{background:var(--tzx-ink);color:#e9f1ee}
+.tzx-voices .tzx-kicker{color:var(--tzx-amber)}
+.tzx-voices .tzx-h2{color:#fff}
+.tzx-voices .tzx-sub{color:#a9bab5}
+.tzx-voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tzx-voice{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--tzx-radius);padding:22px;display:flex;flex-direction:column;gap:12px;transition:.25s}
+.tzx-voice:hover{background:rgba(255,255,255,.1);transform:translateY(-4px)}
+.tzx-voice-top{display:flex;align-items:center;gap:11px}
+.tzx-voice-top .tzx-avatar{width:38px;height:38px;font-size:14px;border-radius:12px}
+.tzx-voice-top b{font-size:14.5px;color:#fff;display:block;line-height:1.3}
+.tzx-voice-top small{font-size:11.5px;color:#8fa5a0}
+.tzx-voice p{font-size:13.8px;line-height:1.85;color:#d3e0db}
+.tzx-voice .tzx-voice-tag{font-size:11.5px;color:var(--tzx-mint);align-self:flex-start;border:1px solid rgba(47,158,122,.5);padding:2px 10px;border-radius:999px}
+@media(max-width:900px){.tzx-voice-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.tzx-voice-grid{grid-template-columns:1fr}}
+
+/* ---------- 动态 + 合作 ---------- */
+.tzx-news-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.tzx-news-list li{display:flex;gap:18px;padding:18px 0;border-bottom:1px dashed var(--tzx-line)}
+.tzx-news-list li:first-child{padding-top:0}
+.tzx-news-date{flex:none;width:64px;text-align:center;background:var(--tzx-paper);border:1px solid var(--tzx-line);border-radius:12px;padding:8px 0}
+.tzx-news-date b{display:block;font-size:18px;line-height:1.2;color:var(--tzx-mint)}
+.tzx-news-date span{font-size:11px;color:var(--tzx-gray)}
+.tzx-news-list h3{font-size:15.5px;margin-bottom:4px}
+.tzx-news-list p{font-size:13px;color:var(--tzx-gray)}
+.tzx-partner-panel{background:#fff;border:1px solid var(--tzx-line);border-radius:var(--tzx-radius);padding:24px}
+.tzx-partner-panel h3{font-size:16px;margin-bottom:6px}
+.tzx-partner-panel>p{font-size:13px;color:var(--tzx-gray);margin-bottom:16px}
+.tzx-partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tzx-partner{display:flex;align-items:center;gap:9px;font-size:13.5px;background:var(--tzx-paper);border-radius:10px;padding:10px 12px;color:var(--tzx-ink-2)}
+.tzx-partner i{width:26px;height:26px;border-radius:8px;flex:none;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:700;font-style:normal}
+@media(max-width:900px){.tzx-news-grid{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.tzx-faq{background:#fff;border-top:1px solid var(--tzx-line);border-bottom:1px solid var(--tzx-line)}
+.tzx-faq-list{max-width:860px;margin:0 auto}
+.tzx-faq-item{border:1px solid var(--tzx-line);border-radius:12px;margin-bottom:12px;overflow:hidden;background:var(--tzx-paper)}
+.tzx-faq-item summary{list-style:none;cursor:pointer;padding:16px 20px;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.tzx-faq-item summary::-webkit-details-marker{display:none}
+.tzx-faq-item summary::after{content:"+";font-size:20px;color:var(--tzx-mint);transition:.2s;line-height:1}
+.tzx-faq-item[open] summary::after{transform:rotate(45deg)}
+.tzx-faq-item[open] summary{background:#fff}
+.tzx-faq-item p{padding:0 20px 18px;font-size:14px;color:var(--tzx-gray);line-height:1.85}
+
+/* ---------- 联系投稿 ---------- */
+.tzx-contact{background:radial-gradient(700px 320px at 90% 0%,rgba(47,158,122,.18),transparent 60%),var(--tzx-paper)}
+.tzx-contact-panel{background:var(--tzx-ink);border-radius:24px;padding:52px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;color:#e9f1ee;align-items:center}
+.tzx-contact-panel h2{font-size:clamp(22px,2.6vw,30px);color:#fff;margin-bottom:14px;line-height:1.35}
+.tzx-contact-panel p{font-size:14.5px;color:#b7c8c3;margin-bottom:22px}
+.tzx-contact-actions{display:flex;gap:12px;flex-wrap:wrap}
+.tzx-contact-panel .tzx-btn-primary{background:var(--tzx-mint)}
+.tzx-contact-panel .tzx-btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.tzx-contact-panel .tzx-btn-ghost:hover{background:#fff;color:var(--tzx-ink)}
+.tzx-contact-info{display:grid;gap:14px}
+.tzx-contact-info li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px;font-size:13.5px;color:#cfded9}
+.tzx-contact-info b{display:block;color:#fff;font-size:14.5px;margin-bottom:2px}
+@media(max-width:900px){.tzx-contact-panel{grid-template-columns:1fr;padding:34px}}
+
+/* ---------- 页脚 ---------- */
+.tzx-footer{background:#121a20;color:#9fb1ac;padding:54px 0 26px;font-size:13.5px}
+.tzx-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:34px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
+.tzx-footer h4{color:#fff;font-size:14.5px;margin-bottom:14px}
+.tzx-footer li{padding:5px 0}
+.tzx-footer a:hover{color:var(--tzx-mint)}
+.tzx-footer-brand b{color:#fff;font-size:17px;letter-spacing:1px;display:block;margin-bottom:10px}
+.tzx-footer-brand p{line-height:1.85}
+.tzx-footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;font-size:12.5px;color:#7d8f8a}
+@media(max-width:900px){.tzx-footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.tzx-footer-grid{grid-template-columns:1fr}}
+
+/* ---------- 回到顶部 / Toast / 弹窗 ---------- */
+.tzx-top{position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;background:var(--tzx-ink);color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px rgba(27,34,41,.28);opacity:0;visibility:hidden;transform:translateY(10px);transition:.25s;z-index:80}
+.tzx-top.is-show{opacity:1;visibility:visible;transform:none}
+.tzx-toast{position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);background:var(--tzx-ink);color:#fff;padding:11px 22px;border-radius:999px;font-size:13.5px;opacity:0;visibility:hidden;transition:.28s;z-index:200;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.tzx-toast.is-show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.tzx-modal-mask{position:fixed;inset:0;background:rgba(14,20,24,.55);backdrop-filter:blur(3px);display:none;place-items:center;z-index:300;padding:20px}
+.tzx-modal-mask.is-show{display:grid}
+.tzx-modal{background:#fff;border-radius:20px;max-width:440px;width:100%;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.3);animation:tzx-pop .25s ease}
+@keyframes tzx-pop{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+.tzx-modal h3{font-size:19px;margin-bottom:8px}
+.tzx-modal p{font-size:14px;color:var(--tzx-gray);margin-bottom:18px;line-height:1.8}
+.tzx-modal-close{float:right;font-size:20px;color:var(--tzx-gray);line-height:1}
+.tzx-modal-field{width:100%;border:1px solid var(--tzx-line);border-radius:10px;padding:11px 14px;font-size:14px;font-family:inherit;margin-bottom:12px;outline:none}
+.tzx-modal-field:focus{border-color:var(--tzx-mint)}
+.tzx-share-row{display:flex;gap:10px;flex-wrap:wrap}
+.tzx-share-row button{flex:1;min-width:88px;background:var(--tzx-paper);border:1px solid var(--tzx-line);border-radius:10px;padding:10px 8px;font-size:13px;color:var(--tzx-ink-2);transition:.2s}
+.tzx-share-row button:hover{border-color:var(--tzx-mint);color:#1d6f55}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="tzx-sticky-shell">
+  <div class="tzx-announce">
+    <div class="tzx-wrapper">
+      <span class="tzx-announce-badge">官方发布</span>
+      <div class="tzx-announce-track">
+        <span>「无声踩踏·雨夜工地」4K 杜比全景声版已上线，时长 <b>42 分钟</b></span>
+        <span>第三届踩踏声景创作挑战赛开放报名，<b>截止 12 月 12 日</b></span>
+        <span>创作者扶持计划第 7 期新增 30 个签约名额</span>
+        <span>「无声踩踏·雨夜工地」4K 杜比全景声版已上线，时长 <b>42 分钟</b></span>
+        <span>第三届踩踏声景创作挑战赛开放报名，<b>截止 12 月 12 日</b></span>
+        <span>创作者扶持计划第 7 期新增 30 个签约名额</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="tzx-header">
+    <div class="tzx-wrapper">
+      <a class="tzx-brand" href="#tzx-hero" aria-label="踩踏解压官方网站首页">
+        <span class="tzx-brand-mark" aria-hidden="true"><i></i><i></i></span>
+        <span class="tzx-brand-text"><b>踩踏解压</b><small>STEP RELIEF</small></span>
+      </a>
+      <nav class="tzx-nav" id="tzx-nav">
+        <a href="#tzx-hero" class="is-active">首页</a>
+        <a href="#tzx-focus">焦点内容</a>
+        <a href="#tzx-stream">热门视频</a>
+        <a href="#tzx-topics">专题企划</a>
+        <a href="#tzx-creators">创作者</a>
+        <a href="#tzx-news">企业动态</a>
+        <a href="#tzx-contact">联系投稿</a>
+      </nav>
+      <form class="tzx-search" id="tzx-search-form" role="search" onsubmit="return false;">
+        <input type="search" id="tzx-search-input" placeholder="搜索踩踏声景 / 创作者 / 专题" aria-label="站内搜索">
+        <button type="submit" id="tzx-search-btn">搜索</button>
+      </form>
+      <button class="tzx-burger" id="tzx-burger" aria-label="展开导航菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="tzx-hero" id="tzx-hero">
+    <div class="tzx-wrapper tzx-hero-grid">
+      <div>
+        <span class="tzx-hero-badge"><i></i>踩踏解压官方网站 · 持续运营第 6 年</span>
+        <h1 class="tzx-h1">踩踏<span>解压</span></h1>
+        <p class="tzx-hero-lead">用脚步、节奏与材质，把紧绷的神经一点点踩松。<b>踩踏解压</b>是一个专注沉浸式声景与解压影像的原创视频品牌。</p>
+        <p class="tzx-hero-intro">作为深耕解压内容垂直领域的企业，我们以专业收音与正版高清画面为核心，为创作者搭建可持续的内容生态，也为每一位用户提供值得信赖的放松入口。</p>
+        <div class="tzx-hero-actions">
+          <a class="tzx-btn tzx-btn-primary" href="#tzx-focus">浏览焦点内容</a>
+          <a class="tzx-btn tzx-btn-ghost" href="#tzx-contact">成为创作者</a>
+        </div>
+        <div class="tzx-hero-stats">
+          <div class="tzx-stat"><b data-tzx-count="18600">18,600+</b><span>原创踩踏声景作品</span></div>
+          <div class="tzx-stat"><b data-tzx-count="1280000">128 万+</b><span>社区活跃用户</span></div>
+          <div class="tzx-stat"><b data-tzx-count="2400">2,400+</b><span>签约与认证创作者</span></div>
+        </div>
+      </div>
+      <div class="tzx-hero-visual">
+        <div class="tzx-hero-cover">
+          <img alt="雨夜工地上脚步踩过碎石与水洼的解压影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23223b46'/%3E%3Cstop offset='1' stop-color='%230f1a20'/%3E%3C/linearGradient%3E%3CradialGradient id='r1' cx='0.75' cy='0.2' r='0.7'%3E%3Cstop offset='0' stop-color='%232f9e7a' stop-opacity='0.55'/%3E%3Cstop offset='1' stop-color='%232f9e7a' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g1)'/%3E%3Crect width='800' height='600' fill='url(%23r1)'/%3E%3Cg stroke='%23a8c4bb' stroke-opacity='0.35' stroke-width='2'%3E%3Cpath d='M0 470 L800 430'/%3E%3Cpath d='M0 500 L800 470'/%3E%3Cpath d='M0 530 L800 512'/%3E%3C/g%3E%3Cg fill='%23f0b95f'%3E%3Ccircle cx='620' cy='150' r='46' opacity='0.85'/%3E%3Ccircle cx='620' cy='150' r='80' opacity='0.18'/%3E%3C/g%3E%3Cg fill='%23cfe4dc' opacity='0.9'%3E%3Cellipse cx='250' cy='420' rx='34' ry='12'/%3E%3Cellipse cx='330' cy='452' rx='30' ry='11'/%3E%3Cellipse cx='420' cy='410' rx='33' ry='12'/%3E%3C/g%3E%3Cg stroke='%2338b18a' stroke-width='5' stroke-linecap='round' opacity='0.8'%3E%3Cpath d='M180 300 q40 -50 90 -30'/%3E%3Cpath d='M300 260 q40 -46 92 -22'/%3E%3Cpath d='M440 240 q42 -40 90 -14'/%3E%3C/g%3E%3Ctext x='48' y='92' fill='%23e6f3ee' font-family='sans-serif' font-size='30' font-weight='700'%3ERAINSTEPS / 雨夜工地%3C/text%3E%3C/svg%3E">
+          <span class="tzx-cover-tag">本周焦点 · 4K 声景</span>
+          <span class="tzx-play"><i></i></span>
+        </div>
+        <div class="tzx-hero-float">
+          <span class="tzx-float-ring"><b>78%</b></span>
+          <div><small>声音沉浸度评分</small><strong>杜比全景声 · 专业收音</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌深度解析 -->
+  <section class="tzx-section tzx-about" id="tzx-about">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head">
+        <div>
+          <span class="tzx-kicker">BRAND INSIGHT</span>
+          <h2 class="tzx-h2">关于<em>踩踏解压</em>：我们为什么执着于脚步的声音</h2>
+        </div>
+      </div>
+      <div class="tzx-about-grid">
+        <div class="tzx-about-body">
+          <p>踩踏解压并不是一个模糊的感觉词，它指向一种非常具体的声音体验：鞋底与碎石摩擦的沙沙声、脚掌落在木栈道上的闷响、雨靴踩进水洼时那一瞬间的清脆回弹。这些声音在日常里被忽略，却在被放大、被放慢、被认真记录之后，成为许多人对放松最直接的想象。<strong>踩踏解压官方网站</strong>要做的，就是把这件小事做成一件正经事——用专业的收音设备、严谨的拍摄流程和长期的原创积累，构建一个高品质的解压内容生态。</p>
+          <p>作为国内较早进入解压垂直领域的视频品牌，我们坚持三件事。第一是真实：所有声景都来自真实场景的真实踩踏，不做过度合成，不追求虚假的“爽点”堆叠，让每一次脚步声都经得起耳机反复聆听。第二是专业：从双耳录音麦克风到多轨混音，从机位脚本到光线设计，我们把影视级别的制作标准带进一个看似不起眼的品类里，让解压影像也拥有值得信赖的品质。第三是陪伴：解压不是一次性消费，而是很多人在深夜、在通勤、在失眠时反复打开的习惯，我们因此保持稳定的更新节奏，持续运营、持续回应社区的每一条留言。</p>
+          <h3>从一段声音开始的内容生态</h3>
+          <p>我们的内容生态由三部分构成。其一是官方出品的精品部分，由品牌签约的声景导演与录音师完成，覆盖城市漫步、室内材质、自然地形、工业空间等多条主线，每一条都经过实地踏勘与后期精修；其二是创作者的原创投稿，任何人都可以把身边的一段踩踏声音上传，经过审核与混音建议反馈后进入社区；其三是社区共创的专题企划，围绕季节、地域、材质、情绪发起挑战，让踩踏解压从一个词变成一种可以参与的表达方式。</p>
+          <p>很多用户告诉我们，他们并不需要被“治愈”，只是需要一段不喧哗、不催促的时间。<strong>踩踏解压</strong>的视频里没有解说、没有背景音乐轰炸，只有环境和脚步本身，这恰恰是它被反复收藏的原因。我们相信放松是一种权利，也相信专业能让这种权利更容易获得。未来，我们会继续深耕踩踏声景这一垂直领域，把更多城市、更多材质、更多真实生活里的细小声音收进这个品牌。</p>
+          <h3>一个可以被信赖的长期工程</h3>
+          <p>踩踏解压的企业愿景很朴素：成为用户首选的解压内容品牌。为此我们在版权、审核、创作者收益分配、无障碍字幕与音量提示等技术细节上持续投入，也持续与心理学、听觉研究领域的朋友交流，让内容的情绪价值有着落、有依据。我们不急于扩张品类，而是把这个垂直领域做深做透，让“踩踏解压”四个字本身成为品质与口碑的代名词。</p>
+          <p>如果你也曾在某个加班的深夜，因为一段雨声、一段脚步而稍微松下来，那你已经理解我们。欢迎走进这个由声音搭建的社区，听一段，或者，录一段。</p>
+        </div>
+        <aside class="tzx-about-side">
+          <div class="tzx-side-card">
+            <h4>品牌档案</h4>
+            <ul>
+              <li><span>成立时间</span><b>2020 年</b></li>
+              <li><span>内容主线</span><b>12 条</b></li>
+              <li><span>合作创作者</span><b>2,400+</b></li>
+              <li><span>更新节奏</span><b>每日 6 条</b></li>
+              <li><span>服务地区</span><b>全国 + 海外</b></li>
+            </ul>
+          </div>
+          <div class="tzx-quote">
+            <p>“让一段脚步声，成为你一天里唯一不需要回应的声音。”</p>
+            <span>—— 踩踏解压 内容理念</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="tzx-section" id="tzx-focus">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head">
+        <div>
+          <span class="tzx-kicker">EDITOR'S FOCUS</span>
+          <h2 class="tzx-h2">焦点内容 · 本周<em>值得戴耳机</em>的六条</h2>
+          <p class="tzx-sub">由内容编辑部与声景导演共同挑选，涵盖城市、材质与自然三类踩踏主线。</p>
+        </div>
+        <span class="tzx-head-right">更新于 2026 年 11 月 18 日</span>
+      </div>
+      <div class="tzx-focus-grid">
+        <article class="tzx-video-card tzx-focus-main">
+          <div class="tzx-cover">
+            <img alt="雨夜工地脚步踩过碎石的焦点声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b2b33'/%3E%3Cstop offset='1' stop-color='%230d1519'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg fill='%232f9e7a' opacity='0.35'%3E%3Crect x='0' y='330' width='800' height='120'/%3E%3C/g%3E%3Cg fill='%23e0a03c'%3E%3Ccircle cx='680' cy='90' r='34'/%3E%3Ccircle cx='680' cy='90' r='58' opacity='0.16'/%3E%3C/g%3E%3Cg fill='%23d8e8e1' opacity='0.85'%3E%3Cellipse cx='180' cy='300' rx='40' ry='14'/%3E%3Cellipse cx='280' cy='335' rx='36' ry='13'/%3E%3Cellipse cx='380' cy='300' rx='40' ry='14'/%3E%3Cellipse cx='470' cy='350' rx='33' ry='12'/%3E%3C/g%3E%3Cg stroke='%234cc79f' stroke-width='4' stroke-linecap='round' opacity='0.75'%3E%3Cpath d='M120 220 q50 -60 120 -40'/%3E%3Cpath d='M290 190 q54 -56 126 -30'/%3E%3Cpath d='M470 170 q54 -50 122 -24'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%23eaf5f0' font-family='sans-serif' font-size='24' font-weight='700'%3ERAINSOAKED SITE%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">4K 声景 · 焦点</span>
+            <span class="tzx-cover-time">42:16</span>
+            <span class="tzx-cover-play"></span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>雨夜工地：脚步踩过碎石与积水的一小时</h3>
+            <p>实地录制于城郊一处收工后的工地，雨停后的四十分钟里只有水洼回弹与砂石摩擦，全程无配乐，适合深夜戴着耳机放空。</p>
+            <div class="tzx-card-meta">
+              <span class="tzx-avatar" style="background:#2f9e7a">声</span>
+              <span>声景导演 · 老陈</span><span>·</span><span>32.6 万次播放</span>
+            </div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like aria-label="点赞这条焦点内容"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>4,182</span></button>
+              <button class="tzx-mini-btn" data-tzx-save aria-label="收藏这条焦点内容"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share aria-label="分享这条焦点内容">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card">
+          <div class="tzx-cover">
+            <img alt="木质栈道上赤脚行走的踩踏声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7e6c8'/%3E%3Cstop offset='1' stop-color='%23dcae6a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f2)'/%3E%3Cg stroke='%23b98a45' stroke-width='3' opacity='0.75'%3E%3Cpath d='M0 120 H800'/%3E%3Cpath d='M0 180 H800'/%3E%3Cpath d='M0 240 H800'/%3E%3Cpath d='M0 300 H800'/%3E%3Cpath d='M0 360 H800'/%3E%3C/g%3E%3Cg fill='%236b4a20' opacity='0.55'%3E%3Cellipse cx='240' cy='270' rx='52' ry='20'/%3E%3Cellipse cx='480' cy='210' rx='48' ry='18'/%3E%3C/g%3E%3Cg fill='%232f9e7a'%3E%3Ccircle cx='660' cy='90' r='26' opacity='0.8'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%236b4a20' font-family='sans-serif' font-size='24' font-weight='700'%3EWOODEN PATH%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">材质 · 木栈道</span>
+            <span class="tzx-cover-time">26:08</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>赤脚木栈道：脚掌与松木的二十六分钟</h3>
+            <p>海边栈道，晴日下午，木纹的共鸣比想象中更温柔。</p>
+            <div class="tzx-card-meta">
+              <span class="tzx-avatar" style="background:#e0a03c">木</span>
+              <span>创作者 · 木木声场</span><span>·</span><span>18.4 万</span>
+            </div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>2,760</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card">
+          <div class="tzx-cover">
+            <img alt="地铁站台人流脚步的都市节奏声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23243140'/%3E%3Cstop offset='1' stop-color='%234b6070'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f3)'/%3E%3Cg stroke='%238fb2c4' stroke-width='3' opacity='0.4'%3E%3Cpath d='M0 330 L800 250'/%3E%3Cpath d='M0 380 L800 300'/%3E%3C/g%3E%3Cg fill='%23dfe9ef' opacity='0.85'%3E%3Crect x='120' y='180' width='26' height='70' rx='10'/%3E%3Crect x='300' y='150' width='26' height='70' rx='10'/%3E%3Crect x='470' y='200' width='26' height='70' rx='10'/%3E%3Crect x='620' y='160' width='26' height='70' rx='10'/%3E%3C/g%3E%3Cg fill='%23f0b95f'%3E%3Ccircle cx='120' cy='120' r='16'/%3E%3Ccircle cx='620' cy='110' r='16'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%23e8f1f5' font-family='sans-serif' font-size='24' font-weight='700'%3EPLATFORM STEPS%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">城市 · 通勤</span>
+            <span class="tzx-cover-time">18:32</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>早高峰站台：一千双鞋的节奏分析</h3>
+            <p>记录同一站台从 7:20 到 8:10 的脚步声变化，附声音节奏图谱。</p>
+            <div class="tzx-card-meta">
+              <span class="tzx-avatar" style="background:#4b6070">城</span>
+              <span>创作者 · 城市声采集</span><span>·</span><span>15.9 万</span>
+            </div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>1,984</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card">
+          <div class="tzx-cover">
+            <img alt="秋季落叶小径脚步沙沙声的解压声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f4' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23d9c8a0'/%3E%3Cstop offset='1' stop-color='%238d9a6a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f4)'/%3E%3Cg fill='%23b9743a' opacity='0.85'%3E%3Cellipse cx='140' cy='330' rx='34' ry='12' transform='rotate(-20 140 330)'/%3E%3Cellipse cx='260' cy='360' rx='30' ry='11' transform='rotate(15 260 360)'/%3E%3Cellipse cx='420' cy='320' rx='34' ry='12' transform='rotate(-10 420 320)'/%3E%3Cellipse cx='560' cy='366' rx='30' ry='11' transform='rotate(22 560 366)'/%3E%3Cellipse cx='680' cy='316' rx='32' ry='12' transform='rotate(-16 680 316)'/%3E%3C/g%3E%3Cg stroke='%236b5a3a' stroke-width='4' opacity='0.6'%3E%3Cpath d='M80 420 L80 240'/%3E%3Cpath d='M720 420 L740 220'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%233d4326' font-family='sans-serif' font-size='24' font-weight='700'%3EAUTUMN TRAIL%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">自然 · 季节</span>
+            <span class="tzx-cover-time">34:50</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>落叶小径：秋天最柔软的三十分钟</h3>
+            <p>干燥的梧桐叶在脚下碎开，风一来就换一层质地。</p>
+            <div class="tzx-card-meta">
+              <span class="tzx-avatar" style="background:#8d9a6a">秋</span>
+              <span>创作者 · 慢走记录</span><span>·</span><span>21.2 万</span>
+            </div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>3,410</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="tzx-section tzx-stream" id="tzx-stream">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head">
+        <div>
+          <span class="tzx-kicker">COMMUNITY STREAM</span>
+          <h2 class="tzx-h2">热门视频流 · 社区正在<em>反复播放</em></h2>
+          <p class="tzx-sub">按主题筛选，看看同好们最近在听什么。点击标签即可过滤下方内容。</p>
+        </div>
+        <span class="tzx-head-right">共 18,600+ 条原创声景</span>
+      </div>
+      <div class="tzx-filter-bar" id="tzx-filter-bar">
+        <button class="tzx-filter is-active" data-tzx-filter="all">全部</button>
+        <button class="tzx-filter" data-tzx-filter="city">城市脚步</button>
+        <button class="tzx-filter" data-tzx-filter="material">材质实验</button>
+        <button class="tzx-filter" data-tzx-filter="nature">自然地形</button>
+        <button class="tzx-filter" data-tzx-filter="night">深夜陪伴</button>
+      </div>
+      <div class="tzx-stream-grid" id="tzx-stream-grid">
+        <article class="tzx-video-card" data-tzx-cat="city">
+          <div class="tzx-cover">
+            <img alt="老城区青石板路脚步回响的城市声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%235d6b58'/%3E%3Cg fill='%238fa086' opacity='0.7'%3E%3Crect x='0' y='300' width='800' height='150'/%3E%3C/g%3E%3Cg stroke='%23c3cfb8' stroke-width='3' opacity='0.5'%3E%3Cpath d='M0 320 H800'/%3E%3Cpath d='M0 360 H800'/%3E%3Cpath d='M0 400 H800'/%3E%3C/g%3E%3Cg fill='%23e0a03c'%3E%3Crect x='120' y='120' width='90' height='140' opacity='0.55'/%3E%3Crect x='590' y='100' width='110' height='160' opacity='0.45'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%23eef3e8' font-family='sans-serif' font-size='24' font-weight='700'%3EOLD TOWN STONE%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">城市脚步</span><span class="tzx-cover-time">22:40</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>青石板路：老城区早晨的第一串脚步</h3>
+            <p>六点半的老巷子，石板之间还有一点潮气，回响比平时更长。</p>
+            <div class="tzx-card-meta"><span class="tzx-avatar" style="background:#5d6b58">巷</span><span>巷口声社</span><span>·</span><span>9.8 万</span></div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>1,206</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card" data-tzx-cat="material">
+          <div class="tzx-cover">
+            <img alt="踩过气泡膜与牛皮纸的材质解压声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f0e5d3'/%3E%3Cg fill='%23d9c6a8'%3E%3Ccircle cx='120' cy='120' r='22'/%3E%3Ccircle cx='190' cy='160' r='22'/%3E%3Ccircle cx='260' cy='110' r='22'/%3E%3Ccircle cx='330' cy='170' r='22'/%3E%3Ccircle cx='400' cy='120' r='22'/%3E%3C/g%3E%3Cg fill='%23b99a6c' opacity='0.8'%3E%3Crect x='120' y='280' width='560' height='120' rx='8'/%3E%3C/g%3E%3Cg stroke='%23806a49' stroke-width='3' opacity='0.4'%3E%3Cpath d='M180 280 v120'/%3E%3Cpath d='M380 280 v120'/%3E%3Cpath d='M580 280 v120'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%23806a49' font-family='sans-serif' font-size='24' font-weight='700'%3EMATERIAL TEST%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">材质实验</span><span class="tzx-cover-time">15:24</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>气泡膜与牛皮纸：三种材质的踩踏对比</h3>
+            <p>同一双鞋、同一机位，只换脚下材质，听差别有多大。</p>
+            <div class="tzx-card-meta"><span class="tzx-avatar" style="background:#b99a6c">材</span><span>材质实验室</span><span>·</span><span>12.3 万</span></div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>2,875</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card" data-tzx-cat="nature">
+          <div class="tzx-cover">
+            <img alt="溪边砂石滩赤脚行走的自然踩踏声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f5' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23bfe3e0'/%3E%3Cstop offset='0.55' stop-color='%2393c4be'/%3E%3Cstop offset='0.56' stop-color='%23cdbfa0'/%3E%3Cstop offset='1' stop-color='%23a89574'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f5)'/%3E%3Cg fill='%238a7a5c'%3E%3Cellipse cx='180' cy='330' rx='24' ry='9'/%3E%3Cellipse cx='300' cy='360' rx='20' ry='8'/%3E%3Cellipse cx='460' cy='330' rx='24' ry='9'/%3E%3Cellipse cx='600' cy='366' rx='20' ry='8'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='0.6'%3E%3Cpath d='M0 250 q80 -20 160 0 t160 0 t160 0 t160 0 t160 0' fill='none'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%232c4a48' font-family='sans-serif' font-size='24' font-weight='700'%3ERIVER GRAVEL%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">自然地形</span><span class="tzx-cover-time">28:06</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>溪边砂石滩：赤脚走过二十八个分钟</h3>
+            <p>水位刚退，砂石半干半湿，脚感在两种质地之间来回切换。</p>
+            <div class="tzx-card-meta"><span class="tzx-avatar" style="background:#93c4be">溪</span><span>野外声场</span><span>·</span><span>10.1 万</span></div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>1,732</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card" data-tzx-cat="night">
+          <div class="tzx-cover">
+            <img alt="深夜楼道脚步声与感应灯开关的陪伴声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23182026'/%3E%3Cg fill='%232f9e7a' opacity='0.3'%3E%3Crect x='0' y='340' width='800' height='110'/%3E%3C/g%3E%3Cg fill='%23e0a03c'%3E%3Ccircle cx='400' cy='130' r='30' opacity='0.9'/%3E%3Ccircle cx='400' cy='130' r='70' opacity='0.16'/%3E%3C/g%3E%3Cg stroke='%235a6d74' stroke-width='3' opacity='0.55'%3E%3Cpath d='M100 360 L100 200 L240 200'/%3E%3Cpath d='M560 360 L560 200 L700 200'/%3E%3C/g%3E%3Cg fill='%23cfd9dd' opacity='0.8'%3E%3Cellipse cx='280' cy='330' rx='30' ry='11'/%3E%3Cellipse cx='420' cy='360' rx='28' ry='10'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%23dbe6e9' font-family='sans-serif' font-size='24' font-weight='700'%3EMIDNIGHT HALL%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">深夜陪伴</span><span class="tzx-cover-time">45:00</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>深夜楼道：一盏感应灯与四十五分钟</h3>
+            <p>没有剧情，只有脚步、回声和灯亮的瞬间，被很多人当作睡前的开关。</p>
+            <div class="tzx-card-meta"><span class="tzx-avatar" style="background:#3a4a52">夜</span><span>夜行录音组</span><span>·</span><span>26.7 万</span></div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>5,318</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card" data-tzx-cat="material">
+          <div class="tzx-cover">
+            <img alt="大雪后踩过新雪与冰壳的材质声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f6' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23dfeaf0'/%3E%3Cstop offset='1' stop-color='%23a8bcc6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f6)'/%3E%3Cg fill='%23ffffff' opacity='0.75'%3E%3Ccircle cx='120' cy='100' r='8'/%3E%3Ccircle cx='240' cy='140' r='6'/%3E%3Ccircle cx='380' cy='90' r='7'/%3E%3Ccircle cx='520' cy='150' r='6'/%3E%3Ccircle cx='660' cy='100' r='8'/%3E%3C/g%3E%3Cg fill='%237e97a2' opacity='0.8'%3E%3Cellipse cx='200' cy='320' rx='46' ry='16'/%3E%3Cellipse cx='360' cy='360' rx='42' ry='15'/%3E%3Cellipse cx='520' cy='320' rx='46' ry='16'/%3E%3Cellipse cx='680' cy='366' rx='40' ry='14'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%234a606b' font-family='sans-serif' font-size='24' font-weight='700'%3EFIRST SNOW%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">材质实验</span><span class="tzx-cover-time">31:12</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>初雪之后：新雪、冰壳与薄霜的三重奏</h3>
+            <p>同一片空地，踩过三种不同状态的雪，脆与软的声音各有性格。</p>
+            <div class="tzx-card-meta"><span class="tzx-avatar" style="background:#8fa9b4">雪</span><span>北方声景站</span><span>·</span><span>14.5 万</span></div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>2,109</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="tzx-video-card" data-tzx-cat="city">
+          <div class="tzx-cover">
+            <img alt="菜市场早市脚步与塑料筐碰撞的城市声景封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23e7d8c3'/%3E%3Cg fill='%23c96f5a' opacity='0.8'%3E%3Ccircle cx='150' cy='150' r='34'/%3E%3Ccircle cx='210' cy='190' r='28'/%3E%3C/g%3E%3Cg fill='%237ba05e' opacity='0.8'%3E%3Ccircle cx='330' cy='140' r='30'/%3E%3Ccircle cx='380' cy='190' r='24'/%3E%3C/g%3E%3Cg fill='%23e0a03c' opacity='0.8'%3E%3Ccircle cx='540' cy='150' r='30'/%3E%3Ccircle cx='600' cy='190' r='24'/%3E%3C/g%3E%3Cg fill='%23a89178'%3E%3Crect x='0' y='320' width='800' height='130'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='3' opacity='0.4'%3E%3Cpath d='M0 350 H800'/%3E%3Cpath d='M0 390 H800'/%3E%3C/g%3E%3Ctext x='40' y='70' fill='%23684a33' font-family='sans-serif' font-size='24' font-weight='700'%3EMORNING MARKET%3C/text%3E%3C/svg%3E">
+            <span class="tzx-cover-tag">城市脚步</span><span class="tzx-cover-time">19:48</span>
+          </div>
+          <div class="tzx-card-body">
+            <h3>早市菜场：塑料筐、水汽与人字拖</h3>
+            <p>最热闹的地方也有最治愈的节奏，只要把耳朵放低一点。</p>
+            <div class="tzx-card-meta"><span class="tzx-avatar" style="background:#c96f5a">市</span><span>烟火声工作室</span><span>·</span><span>11.7 万</span></div>
+            <div class="tzx-card-actions">
+              <button class="tzx-mini-btn" data-tzx-like><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg><span data-tzx-like-count>1,655</span></button>
+              <button class="tzx-mini-btn" data-tzx-save><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg>收藏</button>
+              <button class="tzx-mini-btn" data-tzx-share>分享</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="tzx-section" id="tzx-topics">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head">
+        <div>
+          <span class="tzx-kicker">SERIES &amp; CAMPAIGN</span>
+          <h2 class="tzx-h2">专题企划 · 把踩踏<em>做成一条长线</em></h2>
+          <p class="tzx-sub">围绕季节、地域与材质持续更新的原创企划，欢迎创作者报名参与。</p>
+        </div>
+      </div>
+      <div class="tzx-topics-grid">
+        <article class="tzx-topic">
+          <img alt="城市四季脚步专题封面，夏雨中的街道倒影" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%232c4c5a'/%3E%3Cg fill='%234f7f8c' opacity='0.6'%3E%3Crect x='0' y='240' width='600' height='160'/%3E%3C/g%3E%3Cg fill='%23e0a03c'%3E%3Ccircle cx='470' cy='100' r='30'/%3E%3C/g%3E%3Cg fill='%23cfe4e8' opacity='0.7'%3E%3Cellipse cx='160' cy='300' rx='34' ry='12'/%3E%3Cellipse cx='280' cy='340' rx='30' ry='11'/%3E%3C/g%3E%3Ctext x='30' y='60' fill='%23e9f4f7' font-family='sans-serif' font-size='26' font-weight='700'%3EFOUR SEASONS%3C/text%3E%3C/svg%3E">
+          <span class="tzx-topic-state">更新中 · 第 4 季</span>
+          <h3>城市四季 · 同一街道的十二种脚步</h3>
+          <p>固定机位记录一条街从春到冬的踩踏变化，已更新 9 期。</p>
+        </article>
+        <article class="tzx-topic">
+          <img alt="深夜失眠陪伴专题封面，窗外微光的卧室一角" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23141d2b'/%3E%3Cg fill='%232b3d52'%3E%3Crect x='60' y='60' width='180' height='250' rx='8'/%3E%3C/g%3E%3Cg fill='%23f0b95f' opacity='0.85'%3E%3Crect x='90' y='90' width='120' height='130' rx='6' opacity='0.45'/%3E%3C/g%3E%3Cg fill='%232f9e7a' opacity='0.6'%3E%3Crect x='300' y='250' width='240' height='90' rx='10'/%3E%3C/g%3E%3Ctext x='30' y='50' fill='%23dbe8f0' font-family='sans-serif' font-size='24' font-weight='700'%3ENIGHT COMPANY%3C/text%3E%3C/svg%3E">
+          <span class="tzx-topic-state">热播 · 共 24 期</span>
+          <h3>深夜陪伴 · 适合睡前播放的脚步声</h3>
+          <p>低音量、慢节奏、无突发音效，为失眠的人准备的一份清单。</p>
+        </article>
+        <article class="tzx-topic">
+          <img alt="材质实验室专题封面，多种地面材质并置的构成" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23f2ede2'/%3E%3Cg fill='%23c9b79a'%3E%3Crect x='40' y='60' width='160' height='120' rx='8'/%3E%3C/g%3E%3Cg fill='%238db1a4'%3E%3Crect x='220' y='60' width='160' height='120' rx='8'/%3E%3C/g%3E%3Cg fill='%23d99a8f'%3E%3Crect x='400' y='60' width='160' height='120' rx='8'/%3E%3C/g%3E%3Cg fill='%239a8b70'%3E%3Crect x='40' y='210' width='520' height='140' rx='8'/%3E%3C/g%3E%3Ctext x='30' y='30' fill='%235c5340' font-family='sans-serif' font-size='24' font-weight='700'%3EMATERIAL LAB%3C/text%3E%3C/svg%3E">
+          <span class="tzx-topic-state">报名中 · 截止 12/12</span>
+          <h3>材质实验室 · 第三届声景创作挑战</h3>
+          <p>用五种指定材质完成一条原创声景，赢取签约与制作基金。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="tzx-section tzx-creators" id="tzx-creators">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head">
+        <div>
+          <span class="tzx-kicker">CREATORS</span>
+          <h2 class="tzx-h2">创作者矩阵 · 让专业的人<em>被听见</em></h2>
+          <p class="tzx-sub">他们来自录音、纪录片、城市研究与生活方式领域，共同构成踩踏解压的内容生态。</p>
+        </div>
+        <button class="tzx-btn tzx-btn-ghost" data-tzx-apply>申请成为创作者</button>
+      </div>
+      <div class="tzx-creator-grid">
+        <article class="tzx-creator-card">
+          <div class="tzx-creator-ava" style="background:linear-gradient(135deg,#2f9e7a,#1d6f55)">陈</div>
+          <h3>老陈 · 声景导演</h3>
+          <p class="tzx-field">城市 / 工业 / 雨声</p>
+          <p>十年纪录片录音经验，擅长在嘈杂环境里找到最干净的那一层声音。</p>
+          <div class="tzx-creator-nums"><span><b>216</b>作品</span><span><b>32.6万</b>关注</span></div>
+          <a class="tzx-creator-link" href="#tzx-focus">查看作品 →</a>
+        </article>
+        <article class="tzx-creator-card">
+          <div class="tzx-creator-ava" style="background:linear-gradient(135deg,#e0a03c,#b2741f)">木</div>
+          <h3>木木声场</h3>
+          <p class="tzx-field">材质 / 手作 / 木工</p>
+          <p>相信材质有性格，坚持用手工方式搭建每一处录制场景。</p>
+          <div class="tzx-creator-nums"><span><b>148</b>作品</span><span><b>18.4万</b>关注</span></div>
+          <a class="tzx-creator-link" href="#tzx-stream">查看作品 →</a>
+        </article>
+        <article class="tzx-creator-card">
+          <div class="tzx-creator-ava" style="background:linear-gradient(135deg,#4b6070,#2d3d4a)">城</div>
+          <h3>城市声采集</h3>
+          <p class="tzx-field">通勤 / 街区 / 人文</p>
+          <p>把城市当作一台巨大的乐器，记录每天经过却从未被听清的片段。</p>
+          <div class="tzx-creator-nums"><span><b>302</b>作品</span><span><b>15.9万</b>关注</span></div>
+          <a class="tzx-creator-link" href="#tzx-stream">查看作品 →</a>
+        </article>
+        <article class="tzx-creator-card">
+          <div class="tzx-creator-ava" style="background:linear-gradient(135deg,#8d9a6a,#5f6b44)">秋</div>
+          <h3>慢走记录</h3>
+          <p class="tzx-field">自然 / 季节 / 治愈</p>
+          <p>用最慢的速度走路，把四季的变化一条一条收进麦克风。</p>
+          <div class="tzx-creator-nums"><span><b>126</b>作品</span><span><b>21.2万</b>关注</span></div>
+          <a class="tzx-creator-link" href="#tzx-focus">查看作品 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="tzx-section tzx-wall" id="tzx-wall">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head">
+        <div>
+          <span class="tzx-kicker">IMAGE WALL</span>
+          <h2 class="tzx-h2">影像墙 · 社区上传的<em>脚步切片</em></h2>
+          <p class="tzx-sub">来自不同城市、不同材质的原创封面，每一张都对应一段真实的踩踏声景。</p>
+        </div>
+        <span class="tzx-head-right">本月新增 640 张封面</span>
+      </div>
+      <div class="tzx-wall-grid">
+        <div class="tzx-wall-item w-lg"><img alt="雨后柏油路面脚步倒影的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Crect width='600' height='600' fill='%231d2b33'/%3E%3Cg fill='%232f9e7a' opacity='0.3'%3E%3Crect x='0' y='380' width='600' height='220'/%3E%3C/g%3E%3Cg fill='%23e0a03c'%3E%3Ccircle cx='430' cy='180' r='44'/%3E%3Ccircle cx='430' cy='180' r='90' opacity='0.15'/%3E%3C/g%3E%3Cg fill='%23d6e6df' opacity='0.7'%3E%3Cellipse cx='180' cy='430' rx='50' ry='18'/%3E%3Cellipse cx='320' cy='490' rx='44' ry='16'/%3E%3C/g%3E%3C/svg%3E"><span>雨后柏油路</span></div>
+        <div class="tzx-wall-item w-md"><img alt="木地板晨光中脚步投影的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300'%3E%3Crect width='600' height='300' fill='%23e8d3ad'/%3E%3Cg stroke='%23c2a273' stroke-width='4'%3E%3Cpath d='M0 80 H600'/%3E%3Cpath d='M0 150 H600'/%3E%3Cpath d='M0 220 H600'/%3E%3C/g%3E%3Cg fill='%23e0a03c' opacity='0.5'%3E%3Cpath d='M120 0 L260 300 H180 L60 0 Z'/%3E%3C/g%3E%3C/svg%3E"><span>晨光木地板</span></div>
+        <div class="tzx-wall-item w-sm"><img alt="沙滩退潮后脚印细节的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23e3d7bf'/%3E%3Cg fill='%23c2b294'%3E%3Cellipse cx='90' cy='120' rx='26' ry='34'/%3E%3Cellipse cx='180' cy='200' rx='26' ry='34'/%3E%3C/g%3E%3Cg fill='%23a9c7c4' opacity='0.7'%3E%3Crect x='0' y='250' width='300' height='50'/%3E%3C/g%3E%3C/svg%3E"><span>退潮沙滩</span></div>
+        <div class="tzx-wall-item w-sm"><img alt="碎石小径俯拍颗粒质感的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%236d7466'/%3E%3Cg fill='%239aa08c'%3E%3Ccircle cx='60' cy='70' r='14'/%3E%3Ccircle cx='140' cy='120' r='18'/%3E%3Ccircle cx='220' cy='80' r='12'/%3E%3Ccircle cx='100' cy='220' r='16'/%3E%3Ccircle cx='210' cy='240' r='14'/%3E%3C/g%3E%3C/svg%3E"><span>碎石小径</span></div>
+        <div class="tzx-wall-item w-md"><img alt="地铁换乘通道冷光脚步的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300'%3E%3Crect width='600' height='300' fill='%23233040'/%3E%3Cg stroke='%235d7c92' stroke-width='4' opacity='0.6'%3E%3Cpath d='M0 210 L600 150'/%3E%3Cpath d='M0 260 L600 200'/%3E%3C/g%3E%3Cg fill='%23f0b95f'%3E%3Crect x='140' y='60' width='60' height='20' rx='10'/%3E%3Crect x='340' y='60' width='60' height='20' rx='10'/%3E%3C/g%3E%3Cg fill='%23dbe8f0' opacity='0.7'%3E%3Crect x='180' y='150' width='18' height='50' rx='8'/%3E%3Crect x='400' y='140' width='18' height='50' rx='8'/%3E%3C/g%3E%3C/svg%3E"><span>换乘通道</span></div>
+        <div class="tzx-wall-item w-sm"><img alt="苔藓石阶湿润踩踏质感的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%235b6b4f'/%3E%3Cg fill='%2387a06f'%3E%3Crect x='40' y='160' width='220' height='34' rx='8'/%3E%3Crect x='60' y='210' width='200' height='34' rx='8'/%3E%3C/g%3E%3Cg fill='%233d4a34'%3E%3Ccircle cx='90' cy='90' r='20'/%3E%3Ccircle cx='160' cy='70' r='14'/%3E%3Ccircle cx='220' cy='100' r='18'/%3E%3C/g%3E%3C/svg%3E"><span>苔藓石阶</span></div>
+        <div class="tzx-wall-item w-sm"><img alt="雪地清晨第一串脚印的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23dfe9ee'/%3E%3Cg fill='%23ffffff'%3E%3Cellipse cx='80' cy='90' rx='20' ry='28'/%3E%3Cellipse cx='160' cy='150' rx='20' ry='28'/%3E%3Cellipse cx='230' cy='220' rx='20' ry='28'/%3E%3C/g%3E%3Cg fill='%23a9bcc6'%3E%3Cellipse cx='80' cy='90' rx='20' ry='28' opacity='0.25'/%3E%3Cellipse cx='160' cy='150' rx='20' ry='28' opacity='0.25'/%3E%3C/g%3E%3C/svg%3E"><span>清晨雪地</span></div>
+        <div class="tzx-wall-item w-sm"><img alt="木质楼梯转角脚步回声的影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23a6815a'/%3E%3Cg fill='%23c9a97d'%3E%3Crect x='60' y='60' width='80' height='40' rx='6'/%3E%3Crect x='100' y='120' width='80' height='40' rx='6'/%3E%3Crect x='60' y='180' width='80' height='40' rx='6'/%3E%3C/g%3E%3Cg fill='%23e0a03c' opacity='0.6'%3E%3Crect x='200' y='0' width='60' height='300'/%3E%3C/g%3E%3C/svg%3E"><span>木楼梯转角</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="tzx-section tzx-voices" id="tzx-voices">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head">
+        <div>
+          <span class="tzx-kicker">COMMUNITY VOICES</span>
+          <h2 class="tzx-h2">社区的声音 · 真实的<em>日常反馈</em></h2>
+          <p class="tzx-sub">来自用户与创作者的真实留言，我们保留它们原本的语气。</p>
+        </div>
+      </div>
+      <div class="tzx-voice-grid">
+        <article class="tzx-voice">
+          <div class="tzx-voice-top"><span class="tzx-avatar" style="background:#2f9e7a">林</span><div><b>林小满</b><small>加入社区 3 年</small></div></div>
+          <p>“第一次是朋友发给我那条雨夜工地，我说这不就是走路的声音吗，结果听完了整条。现在加班回家路上会开着，比听歌更容易放空。”</p>
+          <span class="tzx-voice-tag">深夜陪伴</span>
+        </article>
+        <article class="tzx-voice">
+          <div class="tzx-voice-top"><span class="tzx-avatar" style="background:#e0a03c">周</span><div><b>周一舟</b><small>材质爱好者</small></div></div>
+          <p>“我把材质实验室的视频全部刷完了，然后自己也录了一段家里老木地板，投上去居然有人评论说像在旧房子里。这种交流很奇妙。”</p>
+          <span class="tzx-voice-tag">创作者投稿</span>
+        </article>
+        <article class="tzx-voice">
+          <div class="tzx-voice-top"><span class="tzx-avatar" style="background:#4b6070">阿</span><div><b>阿哲不熬夜</b><small>音频从业者</small></div></div>
+          <p>“很意外这个品类的收音做得这么认真，底噪控制和双耳定位都下了功夫。从专业角度说，比我预想的干净很多。”</p>
+          <span class="tzx-voice-tag">专业认可</span>
+        </article>
+        <article class="tzx-voice">
+          <div class="tzx-voice-top"><span class="tzx-avatar" style="background:#8d9a6a">柚</span><div><b>柚子汽水</b><small>学生</small></div></div>
+          <p>“考试周每天晚上听半小时，比刷短视频好太多了。希望多出一点图书馆那种椅子挪动的短片段，特别有用。”</p>
+          <span class="tzx-voice-tag">学习陪伴</span>
+        </article>
+        <article class="tzx-voice">
+          <div class="tzx-voice-top"><span class="tzx-avatar" style="background:#c96f5a">老</span><div><b>老房的猫</b><small>城市记录者</small></div></div>
+          <p>“四季那个专题我一直在追，能看到一条街从春天的水汽到冬天的冰壳，这种耐心在现在的内容里很少见，值得。”</p>
+          <span class="tzx-voice-tag">专题追更</span>
+        </article>
+        <article class="tzx-voice">
+          <div class="tzx-voice-top"><span class="tzx-avatar" style="background:#8fa9b4">海</span><div><b>海边散步者</b><small>户外人群</small></div></div>
+          <p>“砂石滩那期我反复听，真的会想起小时候在海边捡石头。不是那种很夸张的解压，就是很安静，很真实。”</p>
+          <span class="tzx-voice-tag">自然地形</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作 -->
+  <section class="tzx-section" id="tzx-news">
+    <div class="tzx-wrapper">
+      <div class="tzx-news-grid">
+        <div>
+          <span class="tzx-kicker">COMPANY NEWS</span>
+          <h2 class="tzx-h2">企业动态 · 官方发布</h2>
+          <ul class="tzx-news-list" style="margin-top:26px">
+            <li>
+              <div class="tzx-news-date"><b>11.18</b><span>2026</span></div>
+              <div><h3>「深夜陪伴」专区升级，新增睡眠定时与音量曲线建议</h3><p>官方发布新版播放设置，帮助用户在更低音量下保持长时间聆听的舒适度。</p></div>
+            </li>
+            <li>
+              <div class="tzx-news-date"><b>11.12</b><span>2026</span></div>
+              <div><h3>第三届踩踏声景创作挑战赛正式开放报名</h3><p>本届主题为“材质”，设置新人组与专业组，奖品包含制作基金与签约机会。</p></div>
+            </li>
+            <li>
+              <div class="tzx-news-date"><b>11.05</b><span>2026</span></div>
+              <div><h3>创作者扶持计划第 7 期名单公示</h3><p>本期共 30 位创作者入选，覆盖 14 个城市，官方将提供录音设备与后期支持。</p></div>
+            </li>
+            <li>
+              <div class="tzx-news-date"><b>10.28</b><span>2026</span></div>
+              <div><h3>内容审核与音量安全指引更新</h3><p>所有上线声景均通过音量峰值检测，并对突发音效增加提示标记。</p></div>
+            </li>
+          </ul>
+        </div>
+        <aside class="tzx-partner-panel">
+          <h3>合作品牌与伙伴</h3>
+          <p>从设备到场景，我们与这些伙伴长期共建踩踏声景的录制标准。</p>
+          <div class="tzx-partner-grid">
+            <div class="tzx-partner"><i style="background:#2f9e7a">声</i>声野麦克风</div>
+            <div class="tzx-partner"><i style="background:#e0a03c">木</i>木作生活馆</div>
+            <div class="tzx-partner"><i style="background:#4b6070">城</i>城市漫步协会</div>
+            <div class="tzx-partner"><i style="background:#8d9a6a">野</i>野外声场计划</div>
+            <div class="tzx-partner"><i style="background:#c96f5a">慢</i>慢生活周刊</div>
+            <div class="tzx-partner"><i style="background:#8fa9b4">雪</i>北方录音棚</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="tzx-section tzx-faq" id="tzx-faq">
+    <div class="tzx-wrapper">
+      <div class="tzx-section-head" style="justify-content:center;text-align:center">
+        <div>
+          <span class="tzx-kicker">HELP CENTER</span>
+          <h2 class="tzx-h2">常见问题 · 关于<em>踩踏解压</em></h2>
+        </div>
+      </div>
+      <div class="tzx-faq-list">
+        <details class="tzx-faq-item" open>
+          <summary>“踩踏解压”具体是指什么样的内容？</summary>
+          <p>它是一类以脚步与地面接触声为核心的沉浸式声景内容，包括不同材质、不同环境下的真实踩踏录音与画面。我们坚持原声录制，不添加背景音乐，让声音本身成为放松的入口。</p>
+        </details>
+        <details class="tzx-faq-item">
+          <summary>观看是否需要付费？会员有什么不同？</summary>
+          <p>大部分原创声景向所有用户开放。注册用户可使用收藏夹与播放进度记录；创作者认证用户可获得上传、数据分析与制作支持等权益。所有收费项目均在页面明示，不存在隐藏扣费。</p>
+        </details>
+        <details class="tzx-faq-item">
+          <summary>我可以上传自己录制的脚步声吗？</summary>
+          <p>可以。主页导航的“联系投稿”入口支持音频与视频投稿。建议使用外接麦克风，避免风吹与衣物摩擦，上传时请注明录制地点、材质与设备，方便编辑部分类推荐。</p>
+        </details>
+        <details class="tzx-faq-item">
+          <summary>投稿后多久会收到反馈？</summary>
+          <p>通常在 5 个工作日内完成初审。若内容通过，我们会给出混音与封面的优化建议；未通过也会说明原因，欢迎修改后再次提交。创作挑战赛期间审核量较大，可能略有延迟。</p>
+        </details>
+        <details class="tzx-faq-item">
+          <summary>平台如何保证内容的正版与原创？</summary>
+          <p>所有官方出品内容均标注录制者与制作信息，投稿内容需签署原创声明。我们建立了侵权投诉通道，一经核实将下架相关内容，并对反复违规账号限制投稿权限。</p>
+        </details>
+        <details class="tzx-faq-item">
+          <summary>长时间聆听会不会影响听力？</summary>
+          <p>建议将音量控制在设备音量的 60% 以下，并利用播放页的定时关闭功能。带突发音效的内容会额外标注提示，睡眠场景请优先选择“深夜陪伴”专区中经过音量曲线处理的版本。</p>
+        </details>
+        <details class="tzx-faq-item">
+          <summary>如何参与创作挑战赛与品牌合作？</summary>
+          <p>挑战赛报名入口在专题企划区域，需提交一条 3 分钟以上的原创声景。品牌与机构合作请通过页面底部联系方式沟通，我们会在两个工作日内回复合作方案与报价。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系/投稿 -->
+  <section class="tzx-section tzx-contact" id="tzx-contact">
+    <div class="tzx-wrapper">
+      <div class="tzx-contact-panel">
+        <div>
+          <span class="tzx-kicker" style="color:var(--tzx-amber)">JOIN US</span>
+          <h2>把你的脚步声，放进这个社区</h2>
+          <p>无论你是专业录音师，还是只想记录家门前那段石板路，踩踏解压都欢迎你的原创内容。官方提供审核反馈、混音建议与长期分成方案，让认真做内容的人被看见。</p>
+          <div class="tzx-contact-actions">
+            <button class="tzx-btn tzx-btn-primary" data-tzx-apply>立即投稿报名</button>
+            <button class="tzx-btn tzx-btn-ghost" data-tzx-copy>复制本站链接</button>
+          </div>
+        </div>
+        <ul class="tzx-contact-info">
+          <li><b>投稿邮箱</b>creator@steprelief.example</li>
+          <li><b>商务合作</b>partner@steprelief.example</li>
+          <li><b>社区反馈</b>社区页面右下角「意见反馈」，工作日 24 小时内响应</li>
+          <li><b>办公地址</b>城市音谷创意园 B 座 3 层 · 内容中心</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="tzx-footer">
+  <div class="tzx-wrapper">
+    <div class="tzx-footer-grid">
+      <div class="tzx-footer-brand">
+        <b>踩踏解压 STEP RELIEF</b>
+        <p>踩踏解压官方网站，专注沉浸式踩踏声景的原创视频品牌。我们以专业收音、正版高清画面与持续运营的社区，为每一位用户提供值得信赖的放松入口。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#tzx-focus">焦点内容</a></li>
+          <li><a href="#tzx-stream">热门视频</a></li>
+          <li><a href="#tzx-topics">专题企划</a></li>
+          <li><a href="#tzx-wall">影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#tzx-about">品牌故事</a></li>
+          <li><a href="#tzx-creators">创作者矩阵</a></li>
+          <li><a href="#tzx-news">企业动态</a></li>
+          <li><a href="#tzx-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#tzx-contact">投稿与合作</a></li>
+          <li><a href="#tzx-topics">创作挑战赛</a></li>
+          <li><a href="#tzx-contact">意见反馈</a></li>
+          <li><a href="#tzx-hero">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tzx-footer-bottom">
+      <span>© 2020–2026 踩踏解压 官方网站 · 品牌内容版权所有 · 持续运营中</span>
+      <span>内容备案：踩踏声景原创内容库 · 品质与口碑并重</span>
+    </div>
+  </div>
+</footer>
+
+<button class="tzx-top" id="tzx-top" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="tzx-toast" id="tzx-toast" role="status" aria-live="polite"></div>
+
+<div class="tzx-modal-mask" id="tzx-modal-mask">
+  <div class="tzx-modal" id="tzx-modal" role="dialog" aria-modal="true" aria-labelledby="tzx-modal-title">
+    <button class="tzx-modal-close" id="tzx-modal-close" aria-label="关闭弹窗">×</button>
+    <h3 id="tzx-modal-title">投稿报名</h3>
+    <p id="tzx-modal-desc">留下联系方式，内容编辑部会在两个工作日内与你联系，并附上录音设备建议清单。</p>
+    <div id="tzx-modal-body">
+      <input class="tzx-modal-field" type="text" placeholder="你的昵称 / 创作者名" aria-label="昵称">
+      <input class="tzx-modal-field" type="text" placeholder="作品主题，例如：老木地板踩踏声景" aria-label="作品主题">
+      <button class="tzx-btn tzx-btn-primary" style="width:100%;justify-content:center" id="tzx-modal-submit">提交报名</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动导航 ---------- */
+  var burger = document.getElementById("tzx-burger");
+  var nav = document.getElementById("tzx-nav");
+  if(burger && nav){
+    burger.addEventListener("click", function(){
+      var open = nav.classList.toggle("is-open");
+      burger.classList.toggle("is-open", open);
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.addEventListener("click", function(e){
+      if(e.target.tagName === "A"){
+        nav.classList.remove("is-open");
+        burger.classList.remove("is-open");
+        burger.setAttribute("aria-expanded","false");
+      }
+    });
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".tzx-nav a"));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute("href");
+    return id && id.charAt(0) === "#" ? document.querySelector(id) : null;
+  });
+  function syncNav(){
+    var pos = window.scrollY + 160;
+    var current = 0;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) current = i;
+    });
+    navLinks.forEach(function(a, i){
+      a.classList.toggle("is-active", i === current);
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("tzx-top");
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  window.addEventListener("scroll", function(){
+    topBtn.classList.toggle("is-show", window.scrollY > 520);
+    syncNav();
+  }, { passive: true });
+  syncNav();
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById("tzx-toast");
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("is-show"); }, 2200);
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll("[data-tzx-like]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var counter = btn.querySelector("[data-tzx-like-count]");
+      var liked = btn.classList.toggle("is-liked");
+      if(counter){
+        var raw = counter.textContent.replace(/,/g, "");
+        var num = parseInt(raw, 10) || 0;
+        num = liked ? num + 1 : Math.max(0, num - 1);
+        counter.textContent = num.toLocaleString("en-US");
+      }
+      showToast(liked ? "已点赞，谢谢你的回应" : "已取消点赞");
+    });
+  });
+  document.querySelectorAll("[data-tzx-save]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var saved = btn.classList.toggle("is-saved");
+      showToast(saved ? "已加入收藏夹" : "已从收藏夹移除");
+    });
+  });
+
+  /* ---------- 分享 ---------- */
+  document.querySelectorAll("[data-tzx-share]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var box = document.getElementById("tzx-modal-body");
+      var title = document.getElementById("tzx-modal-title");
+      var desc = document.getElementById("tzx-modal-desc");
+      title.textContent = "分享这段踩踏声景";
+      desc.textContent = "选择你常用的方式分享给朋友，一起听一段安静的声音。";
+      box.innerHTML =
+        '<div class="tzx-share-row">' +
+          '<button data-tzx-share-to="微信">微信</button>' +
+          '<button data-tzx-share-to="微博">微博</button>' +
+          '<button data-tzx-share-to="QQ">QQ</button>' +
+          '<button data-tzx-share-to="复制链接">复制链接</button>' +
+        '</div>';
+      openModal();
+      box.querySelectorAll("[data-tzx-share-to]").forEach(function(b){
+        b.addEventListener("click", function(){
+          var to = b.getAttribute("data-tzx-share-to");
+          if(to === "复制链接"){
+            copyLink();
+          } else {
+            showToast("已生成" + to + "分享卡片");
+          }
+          closeModal();
+        });
+      });
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function copyLink(){
+    var text = "踩踏解压 · 沉浸式声景与解压影像社区";
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast("页面信息已复制到剪贴板");
+      }).catch(function(){
+        showToast("复制失败，请手动选择文本");
+      });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        showToast("页面信息已复制到剪贴板");
+      } catch(e) {
+        showToast("复制失败，请手动选择文本");
+      }
+      document.body.removeChild(ta);
+    }
+  }
+  document.querySelectorAll("[data-tzx-copy]").forEach(function(btn){
+    btn.addEventListener("click", copyLink);
+  });
+
+  /* ---------- 弹窗控制 ---------- */
+  var mask = document.getElementById("tzx-modal-mask");
+  var modalBody = document.getElementById("tzx-modal-body");
+  var modalTitle = document.getElementById("tzx-modal-title");
+  var modalDesc = document.getElementById("tzx-modal-desc");
+  var modalSubmit = document.getElementById("tzx-modal-submit");
+
+  var defaultBody = modalBody.innerHTML;
+
+  function openModal(){ mask.classList.add("is-show"); }
+  function closeModal(){ mask.classList.remove("is-show"); }
+
+  document.getElementById("tzx-modal-close").addEventListener("click", closeModal);
+  mask.addEventListener("click", function(e){ if(e.target === mask) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  document.querySelectorAll("[data-tzx-apply]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      modalTitle.textContent = "投稿报名";
+      modalDesc.textContent = "留下联系方式，内容编辑部会在两个工作日内与你联系，并附上录音设备建议清单。";
+      modalBody.innerHTML = defaultBody;
+      bindSubmit();
+      openModal();
+    });
+  });
+
+  function bindSubmit(){
+    var btn = document.getElementById("tzx-modal-submit");
+    if(!btn) return;
+    btn.addEventListener("click", function(){
+      var fields = modalBody.querySelectorAll("input");
+      var filled = true;
+      fields.forEach(function(f){ if(!f.value.trim()) filled = false; });
+      if(!filled){
+        showToast("请先填写昵称与作品主题");
+        return;
+      }
+      showToast("报名已提交，我们会尽快与你联系");
+      closeModal();
+    });
+  }
+  bindSubmit();
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchForm = document.getElementById("tzx-search-form");
+  var searchInput = document.getElementById("tzx-search-input");
+  function doSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      showToast("请输入想找的声景、创作者或专题");
+      return;
+    }
+    var found = false;
+    document.querySelectorAll("#tzx-stream-grid .tzx-video-card").forEach(function(card){
+      if(card.textContent.indexOf(kw) > -1) found = true;
+    });
+    showToast(found ? "在热门视频流中找到与「" + kw + "」相关的内容" : "暂无完全匹配，试试「雨夜」「木栈道」「深夜」");
+  }
+  searchForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    doSearch();
+  });
+  document.getElementById("tzx-search-btn").addEventListener("click", function(e){
+    e.preventDefault();
+    doSearch();
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var filterBar = document.getElementById("tzx-filter-bar");
+  var cards = Array.prototype.slice.call(document.querySelectorAll("#tzx-stream-grid .tzx-video-card"));
+  filterBar.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-tzx-filter]");
+    if(!btn) return;
+    var cat = btn.getAttribute("data-tzx-filter");
+    filterBar.querySelectorAll(".tzx-filter").forEach(function(b){
+      b.classList.toggle("is-active", b === btn);
+    });
+    cards.forEach(function(card){
+      var match = cat === "all" || card.getAttribute("data-tzx-cat") === cat;
+      card.classList.toggle("is-hidden", !match);
+    });
+    showToast(cat === "all" ? "已显示全部视频" : "已筛选：" + btn.textContent);
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll("[data-tzx-count]");
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-tzx-count"), 10) || 0;
+      var suffix = el.textContent.replace(/[\d,.]+/g, "").trim();
+      var duration = 1100;
+      var start = performance.now();
+      function tick(now){
+        var p = Math.min(1, (now - start) / duration);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.round(target * eased);
+        if(target >= 10000){
+          el.textContent = val.toLocaleString("en-US") + (suffix ? " " + suffix : "");
+        } else {
+          el.textContent = val + (target >= 1000 ? "" : "") + (suffix ? " " + suffix : "");
+        }
+        if(p < 1) requestAnimationFrame(tick);
+        else {
+          el.textContent = (target >= 10000 ? target.toLocaleString("en-US") : target) + (suffix ? " " + suffix : "");
+        }
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, { threshold: 0.35 });
+    var stats = document.querySelector(".tzx-hero-stats");
+    if(stats) io.observe(stats);
+  } else {
+    runCounters();
+  }
+
+})();
+</script>
+</body>
+  </html>
